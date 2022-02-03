@@ -1,0 +1,121 @@
+1.To read
+		a.	Statically Typed Language
+				+	What type of vairable is known at compile time by compiler.
+				+	All kinds of checking can be done by compiler,and therefore a lot of trivial
+					bugs are caught at a early stage.
+					E.g. C, C++, Java, Rust, Go, Scala
+			
+			Dynamic Typed Language
+				+	The type of variable is known at run time.
+				+	Find yourself searching for a bug that is duo to the interpreter
+					misinterpreting the type of the variable.
+					E.g. Python, PHP, RupyRails, Perl, Javascript, Erlang
+		
+		b.	Scripting Language
+				+	Desinged specifically for run time environments
+				+	It automates the execution of tasks
+				+	They are used in system administration, web development, games and creating 
+					plugins and extensions
+				+	These languages are interpretered languages
+				+	Open source and supports almost every platform so no need special software
+					required to run them.
+				+	Server-side : used to create dynamic web pages and backend operations.
+					They are executed by web server.
+					E.g. PHP, Python, Node.js, Rupy, and Pearl.
+					
+				+	Client-side : Runs off the browsers.used to front end operations.
+					E.g. HTML, JQuery, CSS and Javascript
+					
+				
+				+	Execution of program takes more time since they are compiled
+				+	used to create software from scratch
+				+	Many lines of code to accomplish particular task
+				+	UI design and graphic design are often partially supported by programming languages
+				+	Programming Languages are self-executable
+				
+				
+				+	Easy to learn and use
+				+	Open-source and free
+				+	Powerful and extensible
+				+	Cross-Platform
+				+	Lighter memory requirements
+				+	Runtime Excution -
+					Runtime Execution- An application can be configured and modified while it is running using a system that permits code to be executed during runtime. This capacity is, in fact, the most important feature that makes scripting languages so important in most applications. Debugging and a rich in-game console are both aided by runtime code execution.
+				+	Safe and secure
+				
+			Programming Language
+				+	It is sequence of instructions to accomplish a tasks
+				+	Syntax and Semantics
+				+	E.g. c, c++, Java
+				+	Three Categories	1.Machine Language 2.Assembly languages 3.High Level Language
+				+	Structure
+				+	Abstraction
+				+	Efficiency
+				+	Portability
+				
+				+	Execution of script takes less time as scripts are generally short
+				+	Used to enhance an existing program or automate specific task and control the behaviour of the program
+				+	UI design and graphic design are greatly aided by scripting languages
+				+	Fewer lines of code
+				+	Requires a host
+				
+		c.	Programming Paradigms
+				+	Style or way of programming
+				+	Imperative		-	explicit sequence of commands that update state.
+				+	Declarative		-	Specifying the result you want, not how to get it 
+				+	Structured		-	Programming with clean,goto-free, control structures
+				+	Procedural		-	Imperative programming with procedure calls
+				+	Object Oriented	-	Defining Objects that send message each other.
+
+2.HTTP 1.1 VS HTTP 2
+		
+		HTTP 1.1
+				+	A connection could be reused, which saved time.
+				+	Pipelining was added.This lowered latency of the communication
+				+	Chunked responses were also supported
+				+	Addtional cache mechanism
+				+	Content negotiation, including language, encoding, and type was introduced.
+					A client and server can now agree on which content to exchange
+				+	Host Header, the ability to host different domains from same IP address allowed server collocation
+		HTTP 2
+				+	Its binary protocol rather than a text protocol.Binary protocols consumes less bandwidth, and more efficiently
+					parsed and are less error-prone than the textual protocols.
+					They can better handle elements such as whitespace, capitalization, and line endings
+				+	Its multiplexed protocol.Parallel requests can be made over the same connection.
+					These capabilities solve the head-of-line blocking problem.
+				+	It compresses header, to reduce the overhead caused by TCP slow-start mechanism
+				+	server push - likely-to-be-used resources into browsers cache, even before they are requested.
+				+	Increased security - Web browsers only support HTTP/2 via encrypted connections, increasing user and application security
+
+3.Objects and its internal representation
+				+	js is an object-oriented programming language, so everything is an object.
+				+	like a real-world entity having state and behaviour
+				+	E.g CAR --> State - color and model / Behaviour - accelerating and brake
+				+	js is template based and we can create objects without the need of having a class.
+				+	Three Ways
+				+	Object Literal to create and define a javascript object.like key value pair
+					E.g.
+						var student = {
+							name : "",
+							age	: "",
+							branch : ""
+						};
+				+	"new" keyword to create and define an object, easily add properties
+					E.g
+						var student = new Object();
+						student.name = "";
+						student.age = "";
+						student.branch = "";
+				+	Object Constructor
+					E.g
+						function student(name, age, branch){
+							this.name = name;
+							this.age = age;
+							this.branch = branch;
+ 						}
+						var stu = student("subramani",32,"CS");
+						
+	js object properties
+				+	collection of unordered properties.
+				+	stu.age or stu['age']
+				
